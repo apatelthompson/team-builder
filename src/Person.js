@@ -3,9 +3,10 @@ import React from "react";
 const Person = props => {
   return (
     <div className="person">
-      <h4>{props.name}</h4>
-      <h4>{props.email}</h4>
-      <h4>{props.role}</h4>
+      <h3 className="name-card">{props.name}</h3>
+      <h4 className="email-card">{props.email}</h4>
+      <h4 className="role-card">{props.role}</h4>
+      <button className="edit-button">Edit</button>
     </div>
   );
 };

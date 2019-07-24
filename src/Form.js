@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Form = props => {
   const [input, addInput] = useState({
@@ -17,6 +17,10 @@ const Form = props => {
     props.setPeople([...props.people, input]);
     console.log("input", input);
   }
+
+  // useEffect(() => {
+  //   setMemberToEdit;
+  // });
 
   return (
     <div className="form">

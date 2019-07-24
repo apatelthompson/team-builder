@@ -25,11 +25,18 @@ function App() {
     }
   ]);
 
+  const [memberToEdit, setMemberToEdit] = useState("");
+
   return (
     <div className="App">
-      <h1>Please meet the Team</h1>
+      <h1>The Awesomest Team Ever</h1>
+      <Form
+        people={people}
+        setPeople={setPeople}
+        memberToEdit={memberToEdit}
+        setMemberToEdit={setMemberToEdit}
+      />
       <Team people={people} />
-      <Form people={people} setPeople={setPeople} />
     </div>
   );
 }

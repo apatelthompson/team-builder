@@ -29,6 +29,11 @@ button {
   margin: 20px 0;
 }
 
+.edit-button {
+  margin: 5px 0;
+  width: 100px;
+}
+
 .form {
   border: 1px dotted indigo;
   border-radius: 5px;
@@ -39,8 +44,28 @@ button {
   justify-content: center;
   align-items: center;
   align-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
 }
 
 select {
   font-size: 1rem;
+}
+
+.person {
+  border: 1px solid indigo;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 30%;
+  margin: 10px 10px;
+}
+
+.team-members {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
